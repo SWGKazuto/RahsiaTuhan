@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Birthday Wish Video</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #6a0dad, #e3d3fc);
+            color: #fff;
+            overflow-y: auto; /* Ensure scrollable page */
+            height: 100%;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            border: 5px solid #fff;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+            position: relative;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        video {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .stars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.2;
+            pointer-events: none; /* Ensure it doesn't block interactions */
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background: #fff;
+            color: #6a0dad;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="stars"></div>
+        <h1>Happy Birthday, Aisya Amalin! 💜</h1>
+        <p>Here’s a special wish just for you!</p>
+        <video controls>
+            <source src="birthday-wish.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <a href="flower.html" class="button">Explore More</a>
+    </div>
+</body>
+</html>

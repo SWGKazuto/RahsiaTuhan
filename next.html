@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Love Blossoms</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom right, #e6f7ff, #ffe6f7);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .flower {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            animation: bloom 3s infinite ease-in-out;
+        }
+        .flower .petal {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: #ff69b4;
+            border-radius: 50%;
+            opacity: 0.8;
+            transform-origin: 50% 100%;
+            animation: petalGrow 3s infinite ease-in-out;
+        }
+        .flower .petal:nth-child(1) { transform: rotate(0deg) translate(0, -40px); }
+        .flower .petal:nth-child(2) { transform: rotate(60deg) translate(0, -40px); }
+        .flower .petal:nth-child(3) { transform: rotate(120deg) translate(0, -40px); }
+        .flower .petal:nth-child(4) { transform: rotate(180deg) translate(0, -40px); }
+        .flower .petal:nth-child(5) { transform: rotate(240deg) translate(0, -40px); }
+        .flower .petal:nth-child(6) { transform: rotate(300deg) translate(0, -40px); }
+        .flower .center {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #ffff66;
+            border-radius: 50%;
+            top: 30%;
+            left: 30%;
+            z-index: 1;
+        }
+        /* Animations */
+        @keyframes bloom {
+            0%, 100% { transform: scale(0.8); }
+            50% { transform: scale(1); }
+        }
+        @keyframes petalGrow {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 1; }
+        }
+        .message {
+            margin-top: 150px;
+            font-size: 1.5em;
+            color: #4c4c4c;
+            text-align: center;
+        }
+        .message .heart {
+            color: #ff69b4;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="flower">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="center"></div>
+    </div>
+    <div class="message">
+        Just like this flower blooms, so does my love for you, Aisya 💜 <br>
+        <span class="heart">🌸💜🌸</span>
+    </div>
+</body>
+</html>
